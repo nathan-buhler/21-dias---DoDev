@@ -1,16 +1,16 @@
-let numero1 = Number(prompt("Digite um número de 0 a 10"))
-let numero2 = Number(prompt("Digite um número de 10 a 20"))
+let combustivel = prompt("Você gostaria de colocar gasolina, alcool ou calibrar os pneus?")
 
-switch(numero1){
-    case 10:
-    let soma =Number(numero1 + numero2)
-    console.log ("resultado soma é" + soma)
-            break;
-case 20:
-         let divisão = parseInt(numero1 / numero2)
-    console.log("resultado da divisão é" + divisão)
-            break;
-        default:
-    console.log("default")
-            break;
-}
+switch (combustivel){
+    case "gasolina":
+        let valor = parseInt(prompt("Qual o valor desejado desejado?"))
+        let quantidade = Number(valor/5)
+        console.log(quantidade + "litros")
+        break;
+    case "alcool":
+        let valor2 = parseInt(prompt("Qual o valor desejado desejado?"))
+        let quantidade2 = Number(valor2/3)
+        console.log(quantidade2 + "litros")
+        break;
+    case "calibrar":
+        console.log("pneus calibrados com sucesso")
+    }
